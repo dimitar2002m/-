@@ -2335,7 +2335,7 @@
         function pop__10(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td><b>Предводител:</b></td><td>' + (feature.properties['Предв'] !== null ? autolinker.link(String(feature.properties['Предв']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td><b>Войвода:</b></td><td>' + (feature.properties['Предв'] !== null ? autolinker.link(String(feature.properties['Предв']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
