@@ -1,4 +1,4 @@
-<!---Created by Dimitar Manolov-Dems--->
+<!---Created by Dimitar Manolov-DEMS--->
 <!doctype html>
 <html lang="en">
     <head>
@@ -1426,9 +1426,6 @@
         function pop__2(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
                         <td colspan="2">' + (feature.properties['дата'] !== null ? autolinker.link(String(feature.properties['дата']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
@@ -1475,10 +1472,7 @@
         function pop__3(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Дата'] !== null ? autolinker.link(String(feature.properties['Дата']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td><b>Дата на избухване:</b></td><td>' + (feature.properties['Дата'] !== null ? autolinker.link(String(feature.properties['Дата']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
@@ -1516,12 +1510,6 @@
         map.addLayer(layer__3);
         function pop__4(feature, layer) {
             var popupContent = '<table>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['номер'] !== null ? autolinker.link(String(feature.properties['номер']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
 			layer.on('popupopen', function(e) {
@@ -1560,10 +1548,7 @@
         function pop__5(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Годин'] !== null ? autolinker.link(String(feature.properties['Годин']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td><b>Година:</b></td><td>' + (feature.properties['Годин'] !== null ? autolinker.link(String(feature.properties['Годин']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
@@ -1607,9 +1592,6 @@
         map.addLayer(layer__5);
         function pop__6(feature, layer) {
             var popupContent = '<table>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['Регио'] !== null ? autolinker.link(String(feature.properties['Регио']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
@@ -1668,9 +1650,6 @@
         map.addLayer(layer__6);
         function pop__7(feature, layer) {
             var popupContent = '<table>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
 			layer.on('popupopen', function(e) {
@@ -2167,12 +2146,6 @@
         function pop__9(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['номер'] !== null ? autolinker.link(String(feature.properties['номер']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
                         <td colspan="2">' + (feature.properties['Окръг'] !== null ? autolinker.link(String(feature.properties['Окръг']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
@@ -2362,10 +2335,7 @@
         function pop__10(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Предв'] !== null ? autolinker.link(String(feature.properties['Предв']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td><b>Предводител:</b></td><td>' + (feature.properties['Предв'] !== null ? autolinker.link(String(feature.properties['Предв']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
@@ -2405,10 +2375,7 @@
         function pop__11(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Място'] !== null ? autolinker.link(String(feature.properties['Място']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td><b>Място:</b></td><td>' + (feature.properties['Място'] !== null ? autolinker.link(String(feature.properties['Място']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
@@ -2457,10 +2424,7 @@
         function pop__12(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Столи'] !== null ? autolinker.link(String(feature.properties['Столи']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td><b>Столица:</b></td><td>' + (feature.properties['Столи'] !== null ? autolinker.link(String(feature.properties['Столи']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
@@ -2599,7 +2563,7 @@
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['name_bg'] !== null ? '<div style="color:#0056a0;font-size:9pt;font-weight:bold;font-family:Cambria,serif;">' + layer.feature.properties['name_bg'] + '</div>' : ''), {permanent: true, offset: [-0, -16], className: 'css__8'});
+            layer.bindTooltip((layer.feature.properties['name_bg'] !== null ? '<div style="color:#0056a0;font-size:9pt;font-weight:bold;font-family:Cambria,serif;font-style:italic;">' + layer.feature.properties['name_bg'] + '</div>' : ''), {permanent: true, offset: [0, 10], className: 'css__8'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
