@@ -2144,9 +2144,12 @@
         bounds_group.addLayer(layer__8);
         map.addLayer(layer__8);
         function pop__9(feature, layer) {
-            var popupContent = '<table>\
+          var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Окръг'] !== null ? autolinker.link(String(feature.properties['Окръг']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th colspan="2"><b>' + (feature.properties['Окръг'] !== null ? autolinker.link(String(feature.properties['Окръг']).replace(/'/g, '\'').toLocaleString()) : '') + '</b></th>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2"><b>Апостол:</b> ' + (feature.properties['Апостол'] !== null ? autolinker.link(String(feature.properties['Апостол']).replace(/'/g, '\'').toLocaleString()) : 'Няма данни') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
